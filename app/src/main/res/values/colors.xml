@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="trang">#ffffff</color>
+    <color name="den">#000000</color>
+    <color name="vang">#FFEB3B</color>
+    <color name="xam">#F9F8F8</color>
+    <color name="black_mo_2">#B6B6B6</color>
+    <color name="colorItemClick">#f7f7f7</color>
+    <color name="colorButtonGreen">#1DA1F2</color>
+    <color name="colorTextChild">#115D80</color>
+</resources>

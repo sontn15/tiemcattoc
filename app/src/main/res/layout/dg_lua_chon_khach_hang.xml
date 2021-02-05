@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txvTenKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/colorItemClick"
+        android:background="@drawable/shape_bg_bovien_color_xanh"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/den"/>
+    <TextView
+        android:id="@+id/txvSuaThongTinKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sửa Thông Tin"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/den"
+        android:background="@color/trang"
+        android:paddingLeft="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/den"/>
+    <TextView
+        android:id="@+id/txvXoaKhacHang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Xóa"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/den"
+        android:background="@color/trang"
+        android:paddingLeft="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/den"/>
+    <TextView
+        android:id="@+id/txvCatTocChoKhach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cắt Tóc"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/den"
+        android:background="@color/trang"
+        android:paddingLeft="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/den"/>
+    <TextView
+        android:id="@+id/txvlichsukhachcat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Xem Lịch Sử Cắt"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/den"
+        android:background="@color/trang"
+        android:paddingLeft="5dp"
+        />
+</LinearLayout>

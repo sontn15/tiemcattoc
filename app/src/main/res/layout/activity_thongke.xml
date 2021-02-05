@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trang">
+
+    <TextView
+        android:id="@+id/tvTitleThongKeNgay"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorItemClick"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:text="Thống kê số lượng khách theo ngày"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llThongKeNgay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvTitleThongKeNgay"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chọn ngày"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvDateSearchThongKeNgay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="10/10/2021"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThongKeNgay"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llThongKeNgay"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_bg_bovien_color_xanh"
+        android:text="Thống kê ngày"
+        android:textColor="@color/trang"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/llNgayThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnThongKeNgay"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Ngày thống kê:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDateThongKeNgay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="10/10/2021"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llKetQuanNgayThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llNgayThongKe"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Số lượng khách:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSoLuongThongKeNgay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="100"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvTitleThongKeThang"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llKetQuanNgayThongKe"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorItemClick"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:text="Thống kê số lượng khách theo tháng"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llThongKeThang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvTitleThongKeThang"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chọn tháng"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnChonThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="10/10/2021"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThongKeThang"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llThongKeThang"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_bg_bovien_color_xanh"
+        android:text="Thống kê tháng"
+        android:textColor="@color/trang"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/llThangThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnThongKeThang"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tháng thống kê:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDateThongKeThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="10/2021"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llThangThongKeThang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llThangThongKe"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Số lượng khách:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSoLuongThongKeThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="100"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvTitleThongKeThangThoGioi"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llThangThongKeThang"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorItemClick"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:text="Thợ được chọn nhiều nhất trong tháng"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llThongKeThangThoGioi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvTitleThongKeThangThoGioi"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chọn tháng"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnChonThangThoGioi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_bg_bovien_xam_trang_edit_text"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="10/10/2021"
+            android:textColor="@color/den"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThongKeThangThoGioi"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llThongKeThangThoGioi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_bg_bovien_color_xanh"
+        android:text="Thống kê thợ giỏi"
+        android:textColor="@color/trang"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/llThangThongKeThoGioi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnThongKeThangThoGioi"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tháng thống kê:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDateThongKeThangThoGioi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="10/2021"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTenThoGioi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llThangThongKeThoGioi"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tên thợ:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTenThongKeThangThoGioi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="Đinh Văn Nam"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llTenThoGioi"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tổng số lần:"
+            android:textColor="@color/den"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSoLanThoGioi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="100"
+            android:textColor="@color/colorTextChild"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

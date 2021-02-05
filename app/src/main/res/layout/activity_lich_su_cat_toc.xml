@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xam"
+    tools:context=".screen.LichSuCatTocActivity">
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Khách Hàng"
+                android:textColor="@color/den"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/txvTenKhachHang"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Nam"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/colorItemClick"
+                android:background="@drawable/shape_bg_bovien_color_xanh"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Số Lần Cắt Tóc"
+                android:textColor="@color/den"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/txvSoLanCat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/colorItemClick"
+                android:background="@drawable/shape_bg_bovien_color_xanh"/>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Thợ Cắt"
+                android:textColor="@color/den"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:id="@+id/txvTenThoCat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="@color/den"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:hint="Nguyễn Văn ............."
+                android:background="@drawable/botron_edittext"/>
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_lui"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_lui"
+                    android:padding="5dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txvngaycat"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape_bg_bovien_color_xanh"
+                    android:gravity="center"
+                    android:text="20-10-1997"
+                    android:textColor="@color/colorItemClick"
+                    android:textSize="20sp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_tien"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_tien"
+                    android:padding="5dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edt"
+                android:gravity="center"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img_anh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/calendar"
+                    android:scaleType="fitXY"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvThoatLichSu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/shape_bg_bovien_color_xanh"
+        android:gravity="center"
+        android:text="THOÁT"
+        android:textColor="@color/colorItemClick"
+        android:textSize="20sp"
+         />
+</RelativeLayout>
